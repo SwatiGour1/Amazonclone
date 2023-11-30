@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lexical</title>
+    </head>
+    <body></body>
+    <script>
+        let data={
+            list:"friend",
+            name:['apple','bnana','papaya'] ,
+            getname:function(){
+                this.name.map((item)=>{
+                    console.log(this.list,item)
+                })
+            }                      
+        }
+        data.getname()
+    </script>
+</html>

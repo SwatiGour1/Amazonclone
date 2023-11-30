@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>default parameter</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        function someval(){
+            return 100;
+        }
+        function add(a,b=10,c=someval()){
+            return a+b+c;
+        }
+      document.write(add(10));
+    </script>
+</html>

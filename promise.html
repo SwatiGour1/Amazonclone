@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>promise</title>
+    </head>
+    <body></body>
+    <script>
+        let a;
+        document.write(typeof(a));
+        let promisedata=new Promise((resolved,reject)=>{
+            setTimeout(()=>{
+                a="jjkjkjk"
+                resolved("done")
+            },3000)
+        })
+        promisedata.then(()=>{
+            alert(a);
+        })
+    </script>
+</html>
